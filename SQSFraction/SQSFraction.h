@@ -33,7 +33,6 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "NSDecimalNumber+SQSFraction.h"
 
 typedef enum {
     SQSFractionStringStyleInline = 0,

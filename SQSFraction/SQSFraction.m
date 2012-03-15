@@ -33,14 +33,13 @@
  */
 
 #import "SQSFraction.h"
+#import "NSDecimalNumber+SQSFraction.h"
 
 static NSString * const kCodingKeyNumerator = @"SQSNumerator";
 static NSString * const kCodingKeyDenominator = @"SQSDenominator";
 static NSString * const kCodingKeyIsNegative = @"SQSIsNegative";
 
 @interface SQSFraction ()
-
-
 
 + (SQSFraction *)_fractionByCollapsingPartialContinuedFraction:(NSArray *)partialContinuedFraction;
 + (SQSFraction *)_fractionForDecimalNumber:(NSDecimalNumber *)decimal 
@@ -398,7 +397,7 @@ static NSString * const kCodingKeyIsNegative = @"SQSIsNegative";
 + (SQSFraction *)_fractionForDecimalNumber:(NSDecimalNumber *)decimal
                            acceptableError:(double)error
 {
-    BOOL isNegative = [decimal isLessThan:[NSDecimalNumber zero]];
+    BOOL isNegative = ([decimal compare:[NSDecimalNumber zero]] == NSOrderedAscending);
     if (isNegative) {
         decimal = [decimal decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"-1"]];
     }

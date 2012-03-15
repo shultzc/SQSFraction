@@ -34,6 +34,7 @@
 
 #import "SQSFractionTests.h"
 #import "SQSFraction.h"
+#import "NSDecimalNumber+SQSFraction.h"
 
 @implementation SQSFractionTests
 

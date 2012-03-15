@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SQSFraction_iOS' target in the 'SQSFraction_iOS' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
