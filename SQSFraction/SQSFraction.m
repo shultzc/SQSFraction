@@ -289,11 +289,14 @@ static NSString * const kCodingKeyIsNegative = @"SQSIsNegative";
 
 - (NSDecimalNumber *)decimalValue
 {
+    if ([self numerator] == 0) {
+        return [NSDecimalNumber zero];
+    }
     NSDecimalNumber *num = [NSDecimalNumber decimalNumberWithMantissa:[self numerator]
-                                                             exponent:1
+                                                             exponent:0
                                                            isNegative:[self isNegative]];
     NSDecimalNumber *denom = [NSDecimalNumber decimalNumberWithMantissa:[self denominator]
-                                                               exponent:1
+                                                               exponent:0
                                                              isNegative:NO];
     return [num decimalNumberByDividingBy:denom];
 }
