@@ -4,7 +4,7 @@ SQSFraction
 SQSFraction is a class that can act as a model object for fractions (i.e. rational
 numbers). In addition to the usual expected arithmetic operations (e.g. addition,
 multiplication), it also supports the generation of fractions from arbitrary decimals with
-arbitrary (within limits of precision).
+arbitrary precision (within limits of the architecture).
 
 
 Requirements
