@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A401EFF715129DB40083DC6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A457C7C515128333005F31E7 /* Foundation.framework */; };
-		A401F00215129DE60083DC6D /* SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB7314FF2D34008A6BF2 /* SQSFraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A401F00215129DE60083DC6D /* SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB7314FF2D34008A6BF2 /* SQSFraction.h */; settings = {ATTRIBUTES = (); }; };
 		A401F00315129DF00083DC6D /* SQSFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB7414FF2D34008A6BF2 /* SQSFraction.m */; };
-		A401F00415129DFB0083DC6D /* NSDecimalNumber+SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB9414FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A401F00415129DFB0083DC6D /* NSDecimalNumber+SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB9414FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.h */; settings = {ATTRIBUTES = (); }; };
 		A401F00515129DFF0083DC6D /* NSDecimalNumber+SQSFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB9514FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.m */; };
 		A457C7DA15128B61005F31E7 /* SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB7314FF2D34008A6BF2 /* SQSFraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A457C7DB15128B64005F31E7 /* NSDecimalNumber+SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB9414FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
