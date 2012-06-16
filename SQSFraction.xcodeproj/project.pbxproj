@@ -10,11 +10,10 @@
 		A401EFF715129DB40083DC6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A457C7C515128333005F31E7 /* Foundation.framework */; };
 		A401F00215129DE60083DC6D /* SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB7314FF2D34008A6BF2 /* SQSFraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A401F00315129DF00083DC6D /* SQSFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB7414FF2D34008A6BF2 /* SQSFraction.m */; };
-		A401F00415129DFB0083DC6D /* NSDecimalNumber+SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB9414FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A401F00415129DFB0083DC6D /* NSDecimalNumber+SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB9414FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A401F00515129DFF0083DC6D /* NSDecimalNumber+SQSFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB9514FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.m */; };
-		A457C7D51512844E005F31E7 /* SQSFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB7414FF2D34008A6BF2 /* SQSFraction.m */; };
 		A457C7DA15128B61005F31E7 /* SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB7314FF2D34008A6BF2 /* SQSFraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A457C7DB15128B64005F31E7 /* NSDecimalNumber+SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB9414FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A457C7DB15128B64005F31E7 /* NSDecimalNumber+SQSFraction.h in Headers */ = {isa = PBXBuildFile; fileRef = A461CB9414FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A461CB6B14FF2D34008A6BF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A461CB6A14FF2D34008A6BF2 /* Cocoa.framework */; };
 		A461CB7514FF2D34008A6BF2 /* SQSFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB7414FF2D34008A6BF2 /* SQSFraction.m */; };
 		A461CB7D14FF2D35008A6BF2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A461CB7C14FF2D35008A6BF2 /* SenTestingKit.framework */; };
@@ -23,7 +22,6 @@
 		A461CB8714FF2D35008A6BF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A461CB8514FF2D35008A6BF2 /* InfoPlist.strings */; };
 		A461CB8A14FF2D35008A6BF2 /* SQSFractionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB8914FF2D35008A6BF2 /* SQSFractionTests.m */; };
 		A461CB9714FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB9514FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.m */; };
-		A461CB9814FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = A461CB9514FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -340,8 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A461CB8A14FF2D35008A6BF2 /* SQSFractionTests.m in Sources */,
-				A461CB9814FF2D72008A6BF2 /* NSDecimalNumber+SQSFraction.m in Sources */,
-				A457C7D51512844E005F31E7 /* SQSFraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +371,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SQSFraction_iOS/SQSFraction_iOS-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -390,7 +385,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SQSFraction_iOS/SQSFraction_iOS-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -419,6 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -437,6 +432,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

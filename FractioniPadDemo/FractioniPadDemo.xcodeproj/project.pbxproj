@@ -246,10 +246,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FractioniPadDemo/FractioniPadDemo-Prefix.pch";
 				INFOPLIST_FILE = "FractioniPadDemo/FractioniPadDemo-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/FractioniPadDemo-bqvzchmzmwlazufyhbysqqktpwqp/Build/Products/Debug\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -261,10 +257,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FractioniPadDemo/FractioniPadDemo-Prefix.pch";
 				INFOPLIST_FILE = "FractioniPadDemo/FractioniPadDemo-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/FractioniPadDemo-bqvzchmzmwlazufyhbysqqktpwqp/Build/Products/Debug\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
